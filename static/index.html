@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ночная карта</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<canvas id="starCanvas"></canvas>
+
+<main class="page">
+    <section id="introCard" class="invite-card">
+        <div class="gif-frame">
+            <img src="top.gif" alt="">
+        </div>
+
+        <p class="label">ночная карта свидания</p>
+
+        <h1>
+            Ну что ж, Аня)<br>
+            Выбор за тобой<br>
+        </h1>
+
+        <p class="subtitle">
+            Выберите маршрут.
+        </p>
+
+        <button id="startBtn" class="start-button">
+            Открыть карту ✨
+        </button>
+
+        <p class="hint">
+            Создано компанией ООО Молдавский чебурек<br>
+            Все права защищены
+        </p>
+    </section>
+
+    <section id="activityCard" class="route-card">
+        <div class="gif-frame small">
+            <img src="s.gif" alt="" >
+        </div>
+
+        <p class="label">первая звезда маршрута</p>
+
+        <h2>С чего начнём вечер?</h2>
+
+        <p class="subtitle compact">
+            Выбери то, что звучит приятнее всего.
+        </p>
+
+        <div class="activity-grid">
+            <button class="activity-option" data-activity="Кино">
+                <div class="option-image">
+                    <img src="kino.jpeg" alt="" class="img-cinema">
+                </div>
+                <b>Кино</b>
+                <small>уютный зал, экран и вечерняя атмосфера</small>
+            </button>
+
+            <button class="activity-option" data-activity="Боулинг">
+                <div class="option-image">
+                    <img src="img.png" alt="">
+                </div>
+                <b>Боулинг</b>
+                <small>просто весело</small>
+            </button>
+
+            <button class="activity-option" data-activity="Кофейня">
+                <div class="option-image">
+                    <img src="img_1.png" alt="">
+                </div>
+                <b>Кофейня</b>
+                <small>спокойно и тепло</small>
+            </button>
+
+            <button class="activity-option" data-activity="Вечерняя прогулка">
+                <div class="option-image">
+                    <img src="img2.jpg" alt="">
+                </div>
+                <b>Вечерняя прогулка</b>
+                <small>город, огни и разговоры по пути</small>
+            </button>
+        </div>
+    </section>
+
+    <section id="finalCard" class="final-card">
+        <div class="final-gif-frame">
+            <img src="t.gif" alt="" >
+        </div>
+
+        <p class="label">маршрут построен</p>
+
+        <h2>
+            Спасибо за выбор,<br>
+            красивая девушка
+        </h2>
+
+        <p class="final-subtitle">
+            Первая звезда вечера уже выбрана.
+        </p>
+
+        <div class="ticket">
+            <span>DATE ROUTE</span>
+            <b id="finalActivity">выбор сохранён</b>
+        </div>
+
+        <div class="final-decor">
+            <span>✦</span>
+            <span>♡</span>
+            <span>☾</span>
+            <span>✧</span>
+            <span>♡</span>
+            <span>✦</span>
+        </div>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
